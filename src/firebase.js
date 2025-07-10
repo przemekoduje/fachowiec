@@ -5,14 +5,14 @@ import { getFirestore } from "firebase/firestore";
 import { getStorage } from "firebase/storage";
 
 const firebaseConfig = {
-    apiKey: "AIzaSyC079iqi5vJd18ilZe3ZcBTKwOBl5JsztU",
-    authDomain: "przegladtechniczny-6b336.firebaseapp.com",
-    projectId: "przegladtechniczny-6b336",
-    storageBucket: "przegladtechniczny-6b336.firebasestorage.app",
-    messagingSenderId: "390111216383",
-    appId: "1:390111216383:web:7adf0275431877706042ca",
-    measurementId: "G-PKDMDZTKX6"
-  };
+  apiKey: "AIzaSyCkByueQkJESHF2mNWbK5b_TEgCtsps90c",
+  authDomain: "fachowiec-d0fd0.firebaseapp.com",
+  projectId: "fachowiec-d0fd0",
+  storageBucket: "fachowiec-d0fd0.firebasestorage.app",
+  messagingSenderId: "391064267739",
+  appId: "1:391064267739:web:06f057729157471b9cd5fe",
+  measurementId: "G-JRKJV4TY01"
+};
 
 // Inicjalizacja Firebase
 const app = initializeApp(firebaseConfig);
