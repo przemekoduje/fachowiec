@@ -1,0 +1,234 @@
+.fachowiec-intro-root {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    min-height: 100svh;
+    overflow: hidden;
+    background: #222;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .fachowiec-bg-video {
+    position: absolute;
+    inset: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    filter: grayscale(0.8) brightness(0.78) blur(0.3px);
+    z-index: 0;
+  }
+  
+  .fachowiec-preloader {
+    z-index: 10;
+    position: absolute;
+    inset: 0;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .fachowiec-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.6rem;
+    letter-spacing: 0.15em;
+    color: #222;
+    font-weight: 400;
+    margin-bottom: 18px;
+  }
+  .fachowiec-logo img {
+    height: 40px;
+    width: auto;
+  }
+  .fachowiec-slogan {
+    font-family: 'ProductSans';
+    font-size: 1rem;
+    color: #787878;
+    letter-spacing: 0.1em;
+    font-weight: 300;
+    text-align: center;
+  }
+  
+  .fachowiec-info-tile {
+    z-index: 10;
+    position: absolute;
+    top: 120px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80vw;
+    max-width: 420px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 42px;
+  }
+  
+  .fachowiec-info-box {
+    background: #507447;
+    padding: 48px 30px 70px 30px;
+    border-radius: 4px;
+    box-shadow: 0 4px 20px rgba(80, 116, 71, 0.09);
+    width: 100%;
+    aspect-ratio: 1 / 1; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .fachowiec-main-title {
+    font-family: 'ProductSans';
+    color: #EBD458;
+    font-size: 2.5rem;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    margin-bottom: 28px;
+  }
+  .fachowiec-location {
+    font-family: 'ProductSans';
+    color: #EBD458;
+    font-size: 1.8rem;
+    font-weight: 100;
+    letter-spacing: 0.02em;
+    text-align: center;
+  }
+  
+  .fachowiec-cta-btn,
+  .fachowiec-skip-btn {
+    margin-top: 0;
+    background:none;
+    border: none;
+    color: rgb(231, 231, 231, 0.8);
+    font-size: 1.15rem;
+    letter-spacing: 0.05em;
+    font-weight: 400;
+    cursor: pointer;
+    outline: none;
+    transition: color 0.13s;
+    text-shadow: 0 2px 12px rgba(30,30,30,0.25);
+    padding: 0px 20px 0 20px;
+    border-radius: 20px;
+  }
+  
+  .fachowiec-cta-btn.disabled {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+  
+  .fachowiec-cta-box {
+    background: #fff;
+    border-radius: 6px;
+    box-shadow: 0 4px 24px rgba(30,30,30,0.13);
+    width: 100%;
+    // aspect-ratio: 1 / 1; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    padding: 66px 0px 0 0px;
+    margin-bottom: -22px;
+  }
+  
+  .fachowiec-avatar {
+    width: 85px;
+    height: 85px;
+    object-fit: cover;
+    border-radius: 50%;
+    position: absolute;
+    top: -42px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 1px solid #fff;
+    box-shadow: 0 3px 8px rgba(30,30,30,0.13);
+  }
+  
+  .fachowiec-cta-desc {
+    font-family: 'ProductSans';
+    
+    color: #222;
+    font-size: 1.09rem;
+    font-weight: 300;
+    text-align: center;
+    margin: 0 20px 38px 20px;
+  }
+  
+  .fachowiec-phone-form {
+    width: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    
+    
+    
+  }
+  .fachowiec-phone-form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    
+    input {
+      font-family: 'ProductSans';
+      border: 1px solid #507447;
+      border-radius: 4px;
+      padding: 11px 13px;
+      font-size: 1.11rem;
+      width: 80%;
+      background: transparent;
+      
+      
+    }
+   button {
+      font-family: 'ProductSans';
+      
+      width: 100%;
+      background: #507447;
+      color: #f7e88d;
+      font-weight: 300;
+      border: none;
+      border-radius: 0 0 4px 4px;
+      font-size: 1.4rem;
+      padding: 14px 0;
+      cursor: pointer;
+      letter-spacing: 0.06em;
+     
+      transition: background 0.15s;
+
+      &:hover {
+        background: #3c5536;
+      }
+    }
+    
+  
+  
+  
+  
+  
+}
+  
+.fachowiec-skip-btn {
+
+    color: #fff;
+    font-weight: 300;
+    background: none;
+    margin-top: 18px;
+
+    font-size: 1.15rem;
+    letter-spacing: 0.05em;
+    
+    cursor: pointer;
+    outline: none;
+    transition: color 0.13s;
+    text-shadow: 0 2px 12px rgba(30,30,30,0.25);
+    opacity: 0.5;
+  }
+  
+
+  

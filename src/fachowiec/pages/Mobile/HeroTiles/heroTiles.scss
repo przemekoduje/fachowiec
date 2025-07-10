@@ -1,0 +1,44 @@
+.hero-tiles-root {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .herotiles-head {
+    height: 80px;
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 2.1rem;
+    font-family: 'ProductSans';
+    padding-left: 5vw;
+    background: #fff;
+    z-index: 10;
+
+    .blue{
+        color: #83BCFF;
+    }
+  }
+  
+  .hero-tiles-grid {
+    flex: 1 1 auto;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 0;
+    box-sizing: border-box;
+    // overflow: hidden;
+    min-height: 0; // bardzo ważne dla wysokości!
+    z-index: 11;
+  }
+  
+  .hero-tiles-grid.blurred {
+    filter: blur(2px);
+    transition: filter 0.3s;
+    pointer-events: none;
+    user-select: none;
+  }
+  

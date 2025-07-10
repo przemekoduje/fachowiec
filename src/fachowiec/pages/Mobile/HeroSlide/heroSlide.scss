@@ -1,0 +1,95 @@
+.hero-slide-root {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero-slide-bg {
+  position: absolute;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: 0;
+  filter: grayscale(0.8) brightness(0.78) blur(0.2px);
+}
+.hero-slide-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100vw;
+  height: 100vh;
+}
+.hero-menu {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  z-index: 1000;
+  font-family: "ProductSans";
+  margin-top: 36px;
+}
+.hero-menu-button {
+  font-size: 28px;
+  color: #f4f4f4;
+  font-weight: 700;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 1000;
+}
+.hero-slide-slider {
+  display: flex;
+  flex-direction: row;
+  gap: 100vw;
+  scroll-snap-type: x mandatory;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  pointer-events: auto;
+  padding-left: calc((100vw - 300px) / 2);
+  padding-right: calc((100vw - 300px) / 2);
+  width: 100vw; // konieczne!
+  box-sizing: border-box;
+  margin-top: 60px;
+}
+
+.hero-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(3px);
+  width: 300px;
+  padding: 15px 0;
+  margin-top: 40px;
+  border-radius: 4px;
+  gap: 10px;
+  cursor: pointer;
+
+  .hero-phone-icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .hero-phone-number {
+    font-size: 32px;
+    font-family: "ProductSans";
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .hero-phone-number,
+  .hero-phone-number a,
+  .hero-phone-number a:visited,
+  .hero-phone-number a:active,
+  .hero-phone-number a:hover {
+    text-decoration: none !important;
+    color: inherit !important;
+  }
+}

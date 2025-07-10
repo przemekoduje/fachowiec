@@ -1,0 +1,24 @@
+.hero-navbar {
+  margin: 0 auto;
+  max-width: 1440px;
+  z-index: 100;
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 46px 12px 36px;
+  min-height: 140px;
+  font-family: "ProductSans", Arial, sans-serif;
+}
+
+.hero-navbar-logo img {
+  height: 38px;
+  width: auto;
+}
+
+.hero-navbar-menu {
+  display: flex;
+  justify-content: space-between;
+  
+  width: 50%;
+}

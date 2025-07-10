@@ -1,0 +1,54 @@
+.hero-slide-tile {
+  min-width: 300px;
+  max-width: 300px;
+  min-height: 300px;
+  scroll-snap-align: center;
+  flex-shrink: 0;
+  background: #83bcff;
+  opacity: 0.95;
+  backdrop-filter: blur(13px);
+  border-radius: 4px;
+//   box-shadow: 0 6px 28px rgba(70, 100, 110, 0.13);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 22px;
+  cursor: pointer;
+//   transition: transform 0.23s, box-shadow 0.23s;
+  pointer-events: auto;
+  font-family: "ProductSans";
+
+  &.no-img {
+    background: rgba(255,255,255,0.82); // lub inny kolor!
+    color: #9b6e2e;
+    
+    justify-content: flex-end;
+    align-items: flex-end;
+    
+  }
+
+  img {
+    width: 150px;
+    flex: 1;
+    object-fit: contain;
+    
+  }
+  .hero-slide-tile-title {
+    width: 100%;
+    text-align: right;
+    font-size: 1.23rem;
+    font-weight: 300;
+    color: #262626;
+    margin-bottom: 10px;
+    letter-spacing: 0.02em;
+  }
+  .hero-slide-tile-desc {
+    width: 100%;
+    text-align: left;
+    font-size: 1.35rem;
+    font-weight: 400;
+    color: #262626;
+    
+  }
+}

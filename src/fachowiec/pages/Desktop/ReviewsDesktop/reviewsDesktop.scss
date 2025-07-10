@@ -1,0 +1,92 @@
+.reviews-section {
+    padding: 80px 0 70px 0;
+    text-align: center;
+    font-family: "ProductSans", sans-serif;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .reviews-bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 70%;
+    background: #fdf4e6;
+    z-index: 0;
+    pointer-events: none;
+  }
+  
+  .reviews-title {
+    position: relative;
+    font-size: 64px;
+    font-weight: 300;
+    color: #444;
+    margin-bottom: 36px;
+    z-index: 1;
+
+  }
+  
+  .reviews-carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+  }
+  
+  .reviews-arrow {
+    position: relative;
+    z-index: 1;
+    background: none;
+    border: none;
+    font-size: 2.3rem;
+    color: #c2b6a2;
+    cursor: pointer;
+    transition: color 0.14s;
+    &:hover {
+      color: #957b4a;
+    }
+  }
+  
+  .reviews-card {
+    background: #fff;
+    box-shadow: 5px 5px 31px rgba(0, 0, 0, 0.2);
+    border-radius: 9px;
+    width: 320px;
+    height: 370px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .reviews-video {
+    width: 100%;
+    height: 100%;
+    border-radius: 9px;
+    background: #f9f9f9;
+    object-fit: cover;
+  }
+  
+  .reviews-text {
+    padding: 20px;
+    color: #888;
+    font-size: 1.14rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+    .reviews-author {
+      margin-top: 22px;
+      font-size: 1rem;
+      color: #444;
+      span {
+        display: block;
+        font-size: 0.93em;
+        color: #b3aa95;
+      }
+    }
+  }
+  

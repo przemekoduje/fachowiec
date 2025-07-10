@@ -1,0 +1,68 @@
+.service-tiles-root {
+  height: 100vh;
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.herotiles-head {
+  height: 140px;
+  min-height: 140px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 2.1rem;
+  font-family: "ProductSans";
+  padding-left: 5vw;
+  background: #fff;
+  z-index: 10;
+
+  .blue {
+    color: #83bcff;
+  }
+}
+
+.hero-tiles-grid {
+  flex: 1 1 auto;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 0;
+  box-sizing: border-box;
+  // overflow: hidden;
+  min-height: 0; // bardzo ważne dla wysokości!
+  z-index: 11;
+}
+
+.hero-tiles-grid.blurred {
+  filter: blur(2px);
+  transition: filter 0.3s;
+  pointer-events: none;
+  user-select: none;
+}
+
+@media (min-width: 426px) {
+
+  .service-tiles-root {
+    
+    display: flex;
+  }
+
+  .herotiles-head {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1440px;
+    padding-left: 0;
+
+  }
+  .hero-tiles-grid {
+    max-width: 1440px;
+    aspect-ratio: 1 / 1;
+    gap: 20px;
+    margin: 0 auto;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+}

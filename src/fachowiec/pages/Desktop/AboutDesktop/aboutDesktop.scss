@@ -1,0 +1,47 @@
+.about-desktop-root {
+    width: 100%;
+    
+    margin: 0 auto 156px auto;
+    padding: 88px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-family: 'ProductSans';
+  }
+  
+  .about-desktop-title {
+    font-size: 64px;
+    font-weight: 300;
+    margin-bottom: 24px;
+    letter-spacing: 0.01em;
+    color: #252525;
+    font-family: "ProductSans", sans-serif;
+  }
+  
+  .about-desktop-desc {
+    font-size: 22px;
+    font-weight: 100;
+    width: 90%;
+    max-width: 1024px;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 32px;
+    font-family: "ProductSans", sans-serif;
+  }
+  
+  .about-desktop-illustration-wrap {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+  }
+  
+  .about-desktop-illustration {
+    width: 100%;
+    min-width: 400px;
+    height: auto;
+    object-fit: contain;
+  }
+  
