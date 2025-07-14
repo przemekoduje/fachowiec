@@ -34,12 +34,14 @@
   
   .diy-desktop-tiles {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(auto, 1fr);
     gap: 5px;
     min-width: 350px;
     max-width: 440px;
     width: 45vw;
+    max-height: 100vh;
+    overflow: scroll;
   }
   .diy-desktop-tile {
     aspect-ratio: 1 / 1; // to robi idealny kwadrat!
@@ -80,21 +82,39 @@
     min-width: 340px;
     padding: 16px 22px;
     background: transparent;
+
+
     .diy-desktop-detail-title {
-      font-size: 1.25rem;
+      font-size: 28px;
       font-weight: 500;
       margin-bottom: 14px;
       color: #212121;
     }
 
     .diy-desktop-tile-intro {
-        font-size: 0.92rem;
-        font-weight: 400;
-        color: #727272;
+        font-size: 16px;
+        font-weight: 600;
+        color: #212121;
         opacity: 0.88;
+
+        h3 {
+          font-size: 1.06em;
+          margin-top: 1em;
+          margin-bottom: 0.4em;
+          font-weight: 400;
+          color: #212121;
+        }
+        p{
+          font-size: 1.06em;
+          margin-top: 1em;
+          margin-bottom: 0.4em;
+          font-weight: 400;
+          color: #181818;
+        }
       }
     .diy-desktop-detail-content {
-      font-size: 1.04rem;
+      font-size: 16px;
+      
       color: #434343;
       
       h4 {
