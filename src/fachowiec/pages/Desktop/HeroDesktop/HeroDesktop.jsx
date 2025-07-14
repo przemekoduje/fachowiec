@@ -35,7 +35,7 @@ export default function HeroDesktop() {
                 Zamów usługę
               </button>
               <a
-                href="tel:690029414"
+                href="tel:48690029414"
                 className="hero-desktop-btn hero-desktop-phone"
               >
                 <span className="hero-desktop-phone-icon" />
