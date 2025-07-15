@@ -121,27 +121,29 @@ export default function ServiceDesktop() {
           onClick={() => setSuccessPopupOpen(false)}
         >
           <div
-            className="popup-form-content"
+            className="popup-backdrop-content"
             onClick={(e) => e.stopPropagation()}
           >
-            <div className="popup-form-title">Zgłoszenie wysłane!</div>
-            <p style={{ margin: "18px 0" }}>
+            <div className="popup-backdrop-title">Zgłoszenie wysłane</div>
+            <p >
               Dziękujemy za zgłoszenie.
               <br />
               Czekaj na kontakt – nasz fachowiec zadzwoni.
               <br />
               Jeśli się spieszysz – zadzwoń:
               <br />
-              <a
+              
+            </p>
+            <a
                 href="tel:690029414"
-                className="blue phone-link"
-                style={{ fontWeight: 600, fontSize: "1.2em" }}
+                className="popup-backdrop-btn phone"
+                
               >
+                <span className="hero-desktop-phone-icon" />
                 690 029 414
               </a>
-            </p>
             <button
-              className="solid"
+              className="popup-backdrop-btn solid"
               onClick={() => setSuccessPopupOpen(false)}
             >
               Zamknij

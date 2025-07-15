@@ -43,10 +43,102 @@
   user-select: none;
 }
 
+.popup-backdrop-content {
+
+  background: rgba(231, 231, 231, 0.864);
+  box-shadow: 0 10px 38px #2222;
+  border-radius: 4px;
+  padding: 28px 28px 18px 28px;
+  min-width: 350px;
+  max-width: 78vw;
+  min-height: 430px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+  max-height: 80vh;
+  overflow-y: auto;
+
+  font-family: "ProductSans";
+
+  .popup-backdrop-title {
+    font-size: 28px;
+    font-weight: 400;
+    margin-bottom: 28px;
+
+
+  }
+
+  p {
+    font-size: 18px;
+    font-weight: 100;
+    margin-bottom: 28px;
+    line-height: 26px;
+
+
+
+
+  }
+
+  .popup-backdrop-btn {
+    width: 200px;
+    font-family: "ProductSans";
+    font-size: 20px;
+    padding: 13px 0;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 3px 16px #0002;
+    transition: background 0.13s, color 0.13s;
+    font-weight: 100;
+    background: #000000;
+    color: #ffffff;
+
+    // border: 1.5px solid #ded8b8;
+    &:hover {
+      background: #FEF5E7;
+      color: #222;
+      border: 1.5px solid transparent;
+    }
+
+    &.phone {
+
+      text-decoration: none !important;
+      background: #fff;
+      color: #222;
+      border: 1.5px solid #bbb;
+      display: flex;
+      align-items: center;
+      gap: 9px;
+      padding: 13px 22px;
+
+      &:hover {
+        background: #FEF5E7;
+        color: #222;
+        border: 1.5px solid transparent;
+      }
+
+      .phone-icon {
+        width: 22px;
+        height: 22px;
+        display: inline-block;
+        background: url('../../../assets/Phone.png') center center/contain no-repeat;
+        margin-right: 6px;
+      }
+    }
+
+
+
+
+  }
+}
+
+
+
 @media (min-width: 426px) {
 
   .service-tiles-root {
-    
+
     display: flex;
   }
 
@@ -57,6 +149,7 @@
     padding-left: 0;
 
   }
+
   .hero-tiles-grid {
     max-width: 1440px;
     aspect-ratio: 1 / 1;

@@ -39,13 +39,13 @@
 .diy-desktop-tiles {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(auto, 1fr);
+  grid-template-rows: repeat(5, 1fr);
   gap: 5px;
   min-width: 350px;
   max-width: 440px;
   width: 45vw;
   max-height: 100vh;
-  overflow: scroll;
+  // overflow: scroll;
 }
 
 .diy-desktop-tile {
@@ -77,11 +77,11 @@
     color: #434343;
   }
 
-  &.active {
-    box-shadow: 0 6px 32px #cab75d22;
-    //   border: 2.5px solid #cab75d66;
-    cursor: default;
-  }
+  // &.active {
+  //   box-shadow: 0 6px 32px #cab75d22;
+  //   //   border: 2.5px solid #cab75d66;
+  //   cursor: default;
+  // }
 
   &:not(.active):hover {
     box-shadow: 0 6px 18px #b0beae15;

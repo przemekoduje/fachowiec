@@ -3,6 +3,7 @@ import "./fachowiecIntro.scss";
 import userPhoto from "../../../assets/profil2.jpg";
 import logoF from "../../../assets/logo.png";
 import { useNavigate } from "react-router-dom";
+import emailjs from "emailjs-com";
 
 export default function FachowiecIntro() {
   const [loading, setLoading] = useState(true);
@@ -10,6 +11,7 @@ export default function FachowiecIntro() {
   const [flip, setFlip] = useState(false);
   const videoRef = useRef();
   const navigate = useNavigate();
+  const [sending, setSending] = useState(false);
 
   const videoSrc = "/assets/0629.mp4";
   const bgImage = "/assets/bg-blur.jpg";
@@ -41,6 +43,29 @@ export default function FachowiecIntro() {
       setTimeout(() => setStep(1), 600);
     }
   };
+
+   const handleSubmit = (e) => {
+    e.preventDefault();
+    setSending(true);
+    const phone = e.target.telefon.value;
+    emailjs.send(
+      "service_gfp97zl",    // <-- Zmień na swój z EmailJS
+      "template_door12p",   // <-- jw.
+      { phone },            // <-- jeśli szablon ma nazwę pola "phone"
+      "z_D_TbMpmrupYdgRF"        // <-- Public key / User ID
+    ).then(
+      (result) => {
+        setSending(false);
+        alert("Dziękujemy! Oddzwonimy.");
+        e.target.reset();
+      },
+      (error) => {
+        setSending(false);
+        alert("Błąd przy wysyłce. Spróbuj jeszcze raz.");
+      }
+    );
+  };
+
 
   return (
     <div className="fachowiec-intro-root" onClick={handleRootClick}>
@@ -94,15 +119,17 @@ export default function FachowiecIntro() {
               Zostaw numer – oddzwonimy<br />
               zanim Twoja usterka zacznie żyć własnym życiem
             </div>
-            <form className="fachowiec-phone-form" onSubmit={e => { e.preventDefault(); alert('Oddzwonimy!'); }}>
+            <form className="fachowiec-phone-form" onSubmit={handleSubmit}>
               <input type="tel" name="telefon" placeholder="telefon" required />
-              <button type="submit">Wyślij</button>
+              <button type="submit" disabled={sending}>
+                {sending ? "Wysyłanie..." : "Wyślij"}
+              </button>
             </form>
           </div>
           <button className="fachowiec-skip-btn"
-          onClick={e => { e.stopPropagation(); navigate("/hero"); }}
-          >
-            pomiń</button>
+          onClick={e => { e.stopPropagation(); navigate("/hero"); }}>
+            pomiń
+          </button>
         </div>
       )}
     </div>
