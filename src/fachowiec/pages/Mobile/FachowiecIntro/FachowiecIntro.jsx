@@ -48,6 +48,9 @@ export default function FachowiecIntro() {
     e.preventDefault();
     setSending(true);
     const phone = e.target.telefon.value;
+
+    console.log("Numer wpisany do formularza:", phone);
+    
     emailjs.send(
       "service_gfp97zl",    // <-- Zmień na swój z EmailJS
       "template_door12p",   // <-- jw.

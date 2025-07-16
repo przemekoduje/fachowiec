@@ -119,27 +119,24 @@ export default function HeroTiles() {
           onClick={() => setSuccessPopupOpen(false)}
         >
           <div
-            className="popup-form-content"
+            className="popup-backdrop-content"
             onClick={(e) => e.stopPropagation()}
           >
-            <div className="popup-form-title">Zgłoszenie wysłane!</div>
-            <p style={{ margin: "18px 0" }}>
-              Dziękujemy za zgłoszenie.
+            <div className="popup-backdrop-title">Zgłoszenie wysłane</div>
+            <p>
+              Twoje zgłoszenie już do nas trafiło.
               <br />
-              Czekaj na kontakt – nasz fachowiec zadzwoni.
+              Zaraz ktoś od nas zadzwoni (daj nam 5 min).
               <br />
-              Jeśli się spieszysz – zadzwoń:
+              Nie chcesz czekać? Dzwoń proszę
               <br />
-              <a
-                href="tel:690029414"
-                className="blue phone-link"
-                style={{ fontWeight: 600, fontSize: "1.2em" }}
-              >
-                690 029 414
-              </a>
             </p>
+            <a href="tel:690029414" className="popup-backdrop-btn phone">
+              <span className="hero-desktop-phone-icon" />
+              690 029 414
+            </a>
             <button
-              className="solid"
+              className="popup-backdrop-btn solid"
               onClick={() => setSuccessPopupOpen(false)}
             >
               Zamknij

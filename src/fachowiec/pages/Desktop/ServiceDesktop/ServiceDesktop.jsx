@@ -125,23 +125,18 @@ export default function ServiceDesktop() {
             onClick={(e) => e.stopPropagation()}
           >
             <div className="popup-backdrop-title">Zgłoszenie wysłane</div>
-            <p >
-              Dziękujemy za zgłoszenie.
+            <p>
+              Twoje zgłoszenie już do nas trafiło.
               <br />
-              Czekaj na kontakt – nasz fachowiec zadzwoni.
+              Zaraz ktoś od nas zadzwoni (daj nam 5 min).
               <br />
-              Jeśli się spieszysz – zadzwoń:
+              Nie chcesz czekać? Dzwoń proszę
               <br />
-              
             </p>
-            <a
-                href="tel:690029414"
-                className="popup-backdrop-btn phone"
-                
-              >
-                <span className="hero-desktop-phone-icon" />
-                690 029 414
-              </a>
+            <a href="tel:690029414" className="popup-backdrop-btn phone">
+              <span className="hero-desktop-phone-icon" />
+              690 029 414
+            </a>
             <button
               className="popup-backdrop-btn solid"
               onClick={() => setSuccessPopupOpen(false)}

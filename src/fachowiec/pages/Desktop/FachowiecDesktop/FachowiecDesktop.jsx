@@ -5,6 +5,7 @@ import AboutDesktop from "../AboutDesktop/AboutDesktop"
 import HowItWorksDesktop from "../ProcessDesktop/ProcessDesktop";
 import ReviewsDesktop from '../ReviewsDesktop/ReviewsDesktop';
 import DIY from '../DiyDesktop/DiyDesktop';
+import FAQ from '../FAQ/Faq';
 
 export default function FachowiecDesktop() {
   return (
@@ -15,6 +16,7 @@ export default function FachowiecDesktop() {
       <HowItWorksDesktop />
       <ReviewsDesktop/>
       <DIY/>
+      <FAQ/>
     </div>
   )
 }
